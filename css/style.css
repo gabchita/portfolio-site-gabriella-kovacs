@@ -1,0 +1,101 @@
+/*
+Colors used:
+Primary Color (white): #ffffff;
+Secondary Colors (pink): #fcede7;
+(light pink):#fef8f6
+(grey):#f2f2f2
+(green):#d6faf5
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif,'Just Another Hand';font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #414141;
+}
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 500;
+}
+img {
+  width: 100%;
+}
+a {
+  color: #4CE8D5;
+  text-decoration: none;
+}
+a:visited {
+  color: #4CE8D5;
+}
+a:focus,
+a:hover {
+  color: #4CE8D5;
+  text-decoration: underline;
+}
+a:active {
+color: #1E95A6;
+}
+.button {
+  display: inline-block;
+  background-color: #1E95A6;
+  color: #ffffff !important;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 30px;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  background-color: #ffffff;
+  color: #1E95A6 !important;
+  padding: 8px;
+  border-radius: 30px;
+  border: 2px solid #1E95A6;
+  text-decoration: none;
+}
+.button:active {
+  background-color: #ffffff;
+color: #1E95A6 !important;
+  padding: 8px;
+  border-radius: 30px;
+  border: 2px solid #1E95A6;
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #1E95A6 !important;
+  padding: 8px;
+  border-radius: 30px;
+  border: 2px solid #1E95A6;
+}
+.button.contact:hover {
+background-color: #1E95A6;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.button.contact:active {
+  background-color: #1E95A6;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.button.social {
+  background-color: transparent;
+  border: none;
+}
