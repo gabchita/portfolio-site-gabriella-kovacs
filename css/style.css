@@ -11,7 +11,7 @@ Secondary Colors (pink): #fcede7;
 }
 
 header {
-  background-color: #d6faf5;
+  background-color: #4CE8D5;
   text-align: center;
   padding: 10px 0;
   box-shadow: 0px 0px 10px 1px #B0D6DC;
@@ -19,9 +19,14 @@ header {
   width:100%;
 }
 
+nav {
+margin-top: 1em;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin:0;
 }
 
 nav>ul>li {
@@ -32,7 +37,7 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4CE8D5;
+  color: #414141 !important;
 }
 
 nav>ul>li>a:visited {
@@ -46,6 +51,12 @@ nav>ul>li>a:focus, a:hover {
 
 nav>ul>li>a:active {
   color: #1E95A6;
+}
+
+.welcome span {
+display: block;
+font-size: 70%;
+margin-top: 1em;
 }
 
 body {
@@ -152,9 +163,17 @@ a:active {
   text-decoration: none;
 }
 
-.button.social {
-  background-color: transparent;
-  border: none;
+.social {
+list-style-type: none;
+padding: 0;
+}
+
+.social li {
+display: inline-block;
+}
+
+.social mvg {
+width: 3em;
 }
 
 /* Layout styling */
@@ -176,7 +195,7 @@ a:active {
 }
 
 #hero {
-  background-color: #d6faf5;
+  background-color: #FCEDE7;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -191,5 +210,5 @@ a:active {
   text-align: center;
 }
 main {
-  padding-top: 133px;
+  padding-top: 115px;
 }
