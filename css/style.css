@@ -16,17 +16,17 @@ header {
   padding: 10px 0;
   box-shadow: 0px 0px 10px 1px #B0D6DC;
   position: fixed;
-  width:100%;
+  width: 100%;
 }
 
 nav {
-margin-top: 1em;
+  margin-top: 1em;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 
 nav>ul>li {
@@ -54,9 +54,9 @@ nav>ul>li>a:active {
 }
 
 .welcome span {
-display: block;
-font-size: 70%;
-margin-top: 1em;
+  display: block;
+  font-size: 70%;
+  margin-top: 1em;
 }
 
 body {
@@ -122,6 +122,7 @@ a:active {
   font-weight: 400;
   padding: 10px;
   border-radius: 30px;
+  transition-duration: 0.2s;
   transition: 0.2s opacity;
 }
 
@@ -132,6 +133,7 @@ a:active {
   border-radius: 30px;
   border: 2px solid #1E95A6;
   text-decoration: none;
+  opacity: 0.8;
 }
 
 .button:active {
@@ -149,6 +151,7 @@ a:active {
   padding: 8px;
   border-radius: 30px;
   border: 2px solid #1E95A6;
+  text-align: center;
 }
 
 .button.contact:hover {
@@ -164,16 +167,17 @@ a:active {
 }
 
 .social {
-list-style-type: none;
-padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .social li {
-display: inline-block;
+  display: inline-block;
+  margin: 0 0.5em;
 }
 
-.social mvg {
-width: 3em;
+.social svg {
+  width: 3em;
 }
 
 /* Layout styling */
@@ -194,11 +198,16 @@ width: 3em;
   border-bottom: 1px solid #4a4a4a;
 }
 
+#work h2 {
+  text-align: center;
+}
+
 #hero {
   background-color: #FCEDE7;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 #hero h1 {
@@ -209,6 +218,91 @@ width: 3em;
   max-width: 250px;
   text-align: center;
 }
+
 main {
   padding-top: 115px;
 }
+
+main h1, h2 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+.berlin-illustration {
+  width: 100%;
+max-width: 100%;
+height: auto;
+}
+
+@keyframes colour-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: colour-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  nav {
+    width: auto;
+    margin: 0;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  main {
+    padding-top: 86px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {}
