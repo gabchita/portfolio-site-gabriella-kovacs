@@ -61,7 +61,7 @@ nav>ul>li>a:active {
 
 body {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif, 'Just Another Hand';
+  font-family: 'Roboto', sans-serif, 'Fredoka One';
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
@@ -75,11 +75,13 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  text-align: center;
 }
 
 h3 {
@@ -97,7 +99,7 @@ img {
 }
 
 a {
-  color: #4CE8D5;
+  color: #1E95A6;
   text-decoration: none;
 }
 
@@ -120,7 +122,7 @@ a:active {
   background-color: #1E95A6;
   color: #ffffff !important;
   font-weight: 400;
-  padding: 10px;
+  padding: 0.5em 2em;
   border-radius: 30px;
   transition-duration: 0.2s;
   transition: 0.2s opacity;
@@ -148,10 +150,9 @@ a:active {
 .button.contact {
   background-color: transparent;
   color: #1E95A6 !important;
-  padding: 8px;
+  padding: 0.5em 3em;
   border-radius: 30px;
   border: 2px solid #1E95A6;
-  text-align: center;
 }
 
 .button.contact:hover {
@@ -185,10 +186,6 @@ a:active {
   padding: 0 15px;
 }
 
-.container.logo {
-  margin: 0 auto;
-}
-
 .row {
   margin: 25px 0;
 }
@@ -210,10 +207,6 @@ a:active {
   text-align: center;
 }
 
-#hero h1 {
-  text-align: center;
-}
-
 .logo {
   max-width: 250px;
   text-align: center;
@@ -223,12 +216,22 @@ main {
   padding-top: 115px;
 }
 
-main h1, h2 {
-  text-align: center;
+.about h1, h2 {
+  font-family: "Fredoka One";
+  text-align: left;
 }
 
 footer {
   text-align: center;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+.frame {
+width: 100%;
+max-width: 100%;
 }
 
 .berlin-illustration {
@@ -248,6 +251,15 @@ height: auto;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 @media only screen and (min-width: 640px) {
