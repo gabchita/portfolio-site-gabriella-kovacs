@@ -61,7 +61,7 @@ nav>ul>li>a:active {
 
 body {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif, 'Fredoka One';
+  font-family: 'Nunito', sans-serif, 'Fredoka One';
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
@@ -86,12 +86,12 @@ h2 {
 
 h3 {
   font-size: 1.75em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h4 {
   font-size: 1.35em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 img {
@@ -234,32 +234,99 @@ width: 100%;
 max-width: 100%;
 }
 
-.berlin-illustration {
+.submarine {
   width: 100%;
 max-width: 100%;
 height: auto;
 }
 
-@keyframes colour-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-}
-
-.sun {
-  animation-duration: 4s;
+.window2 {
+  animation-duration: 3s;
   animation-name: colour-change;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: reverse;
   animation-timing-function: linear;
 }
 
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+.window4 {
+  animation-duration: 3s;
+  animation-name: colour-change;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
 }
 
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+@keyframes colour-change {
+  from {fill: #000000;}
+  to {fill: #4CE8D5;}
+}
+
+.project.welcome .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project.welcome .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project.welcome .column:first-child {
+width: 30%;
+}
+
+.project.welcome .column:last-child {
+width: 50%;
+}
+
+.project.welcome .column:first-child img {
+margin-bottom: 2em;
+}
+
+.intro-heading .row {
+  flex-direction: column;
+}
+
+.intro-heading .column:first-child {
+display: flex;
+width:100%;
+line-height: 0;
+}
+
+.intro-heading .column:last-child {
+display: flex;
+width:100%;
+background-color:#fef8f6;
+align-items: center;
+justify-content: center;
+padding: 2em;
+}
+
+.step-1 .row:first-child {
+flex-direction: column;
+  }
+
+.step-1 .column:first-child {
+  display: flex;
+}
+
+.step-1 .row:first-child .column:first-child img {
+height: 60px;
+width:auto;
+margin-right: 1em;
+}
+
+.step-1 .column:last-child {
+  display: flex;
+}
+
+.inner-section {
+  padding:0 15px;
+}
+
+.inner-section .row {
+  display: flex;
 }
 
 @media only screen and (min-width: 640px) {
@@ -296,25 +363,52 @@ header .container {
     padding-top: 86px;
   }
 
-  .row::after {
+  .home .row::after,
+  .about .row::after {
     content: "";
     clear: both;
     display: table;
   }
 
+  .intro-heading .row {
+    flex-direction: row;
+  }
+
+  .intro-heading .column:first-child {
+  width:30%;
+  }
+
+  .intro-heading .column:last-child {
+  width:70%;
+  }
+
+  .step-1 .row:first-child .column:first-child img {
+  height: 90px;
+  }
+
   h3 {
     margin: 0;
   }
-
-
 }
 
 @media only screen and (min-width: 1024px) {
-  .container {
+  .container, .inner-section {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .step-1 .row:first-child {
+  flex-direction: row;
+  justify-content: space-between;
+    }
+
+    .step-1 .row:first-child .column:first-child {
+    width: 30%;
+}
+
+.step-1 .row:first-child .column:last-child {
+width: 50%;
 }
 
 @media only screen and (min-width: 1440px) {}
