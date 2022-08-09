@@ -356,6 +356,7 @@ footer h2 {
 
 .inner-section .row {
   display: flex;
+  align-items: center;
 }
 
 @media only screen and (min-width: 640px) {
@@ -459,6 +460,19 @@ footer h2 {
 
   h3 {
     margin: 0;
+  }
+
+  .arrow-left {
+    display: flex;
+  }
+
+  .arrow-left > img {
+    height:170px;
+    width: auto;
+  }
+
+  .step .row:first-child {
+    flex-direction: row;
   }
 }
 
